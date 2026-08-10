@@ -1,0 +1,41 @@
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<title>Fichas de Inscrição — Grupo Scalco</title>
+<style>
+  :root { --azul: #004CC3; --azul-escuro: #031232; --laranja: #F05A00;
+          --ground: #FFFFFF; --texto: #1A1A1A; --suave: #5B6472; --borda: #DCE3EE; }
+  :root:not([data-theme="light"]) { }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) { --ground: #0E1420; --texto: #EEF2F8; --suave: #9AA6B8; --borda: #22304A; }
+  }
+  :root[data-theme="dark"] { --ground: #0E1420; --texto: #EEF2F8; --suave: #9AA6B8; --borda: #22304A; }
+  body { margin: 0; background: var(--ground); color: var(--texto);
+         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+         display: flex; justify-content: center; padding: 48px 20px; }
+  main { width: 100%; max-width: 640px; display: flex; flex-direction: column; gap: 28px; }
+  h1 { margin: 0; font-size: 30px; letter-spacing: -.3px; text-wrap: balance; }
+  h1 span { color: var(--laranja); }
+  p.sub { margin: 0; color: var(--suave); font-size: 16px; line-height: 1.5; }
+  ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 12px; }
+  a.ficha { display: flex; align-items: center; justify-content: space-between; gap: 16px;
+            padding: 20px 22px; border: 2px solid var(--borda); border-radius: 14px;
+            text-decoration: none; color: var(--texto); font-size: 19px; font-weight: 600; }
+  a.ficha:hover, a.ficha:focus-visible { border-color: var(--azul); outline: none; }
+  a.ficha .seta { color: var(--azul); font-weight: 700; }
+  .nota { border-left: 4px solid var(--laranja); padding-left: 14px; color: var(--suave);
+          font-size: 14.5px; line-height: 1.55; }
+</style>
+<main>
+  <div>
+    <h1>Fichas de <span>Inscrição</span></h1>
+    <p class="sub">Clique na ficha que você vai usar. Ela abre aqui mesmo, pronta pra editar e imprimir.</p>
+  </div>
+  <ul>
+    <li><a class="ficha" href="tai.html">TAI e TAI Pessoas <span class="seta">abrir →</span></a></li>
+    <li><a class="ficha" href="tribo-anual.html">TRIBO Anual <span class="seta">abrir →</span></a></li>
+    <li><a class="ficha" href="tribo-trienal.html">TRIBO Trienal <span class="seta">abrir →</span></a></li>
+  </ul>
+  <p class="nota">Para editar, clique em cima de qualquer texto e digite por cima. No fim, use
+    <strong>Ver o que mudou</strong> e envie a lista pra Karina. Para imprimir, use
+    <strong>Imprimir / Salvar em PDF</strong> com margens em “Nenhuma” e escala em 100%.</p>
+</main>
