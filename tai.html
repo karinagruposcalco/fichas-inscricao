@@ -341,7 +341,7 @@
             <div class="box-turma">
               <div class="mes">NOVEMBRO</div>
               <div class="cidade">São Paulo</div>
-              <div class="datas">18/11 a 23/11</div>
+              <div class="datas">25/11 a 30/11</div>
             </div>
             <!-- espaço reservado: mantém as colunas alinhadas com a linha do TAI Pessoas.
                  Quando entrar uma turma nova de TAI, é só preencher aqui igual à de cima. -->
@@ -615,8 +615,11 @@
     '.confirmo span', '.assinatura label'
   ].join(',');
 
-  var CHAVE = 'ficha-tai-time-b7bb5aec';
+  var CHAVE = 'ficha-tai-time-25nov';
+  // limpa versoes antigas: a de 18/11 estava com a data do TAI errada
   try { localStorage.removeItem('ficha-tai-time-v1'); } catch (e) {}
+  try { localStorage.removeItem('ficha-tai-time-b7bb5aec'); } catch (e) {}
+  try { localStorage.removeItem('ficha-tai-time-b7bb5aec-quem'); } catch (e) {}
 
   var folha   = document.getElementById('folha');
   var aviso   = document.getElementById('aviso');
